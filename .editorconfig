@@ -1,0 +1,48 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# All files
+[*]
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# C# files
+[*.cs]
+# 들여쓰기 설정
+indent_style = space
+indent_size = 2
+
+# 최대 줄 길이 설정 (120자)
+max_line_length = 80
+
+# 코드 포맷팅 규칙
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+
+# 긴 조건문 자동 줄바꿈
+csharp_wrap_before_binary_operator = true
+csharp_wrap_parameters_style = chop_if_long
+csharp_wrap_before_conditional_ternary_operators = true
+
+# 메서드 체이닝 줄바꿈
+csharp_wrap_chained_method_calls = chop_if_long
+
+# Naming conventions
+dotnet_naming_rule.private_members_with_underscore.severity = suggestion
+dotnet_naming_rule.private_members_with_underscore.symbols = private_fields
+dotnet_naming_rule.private_members_with_underscore.style = prefix_underscore
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+
+dotnet_naming_style.prefix_underscore.capitalization = camel_case
+dotnet_naming_style.prefix_underscore.required_prefix = _
+
+# Code style rules
+csharp_prefer_braces = true:suggestion
+csharp_prefer_simple_using_statement = true:suggestion
